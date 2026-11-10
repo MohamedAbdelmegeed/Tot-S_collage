@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Tot’s College International Preschool & Nursery in New Cairo and El Obour. IPC-based early learning, garden play and inclusion support for ages 4 months to 5 years.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Ctext y=%27.9em%27 font-size=%2790%27%3E%F0%9F%8C%A4%EF%B8%8F%3C/text%3E%3C/svg%3E">
+<title>Tot’s College International Preschool & Nursery</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--deep:#0E2036;--deep2:#15304D;--teal:#00A896;--tealtxt:#028090;--gold:#FFC61A;--coral:#FF6B6B;--leaf:#48BF53;--baby:#DDEEFB;--wht:#FFFFFF;--ink:#192A45;--slate:#566A82;--bg:#FAF8F3;--alt:#F0F4F2;--card:#FFFFFF;--line:#E4DFD3;--serif:"Cormorant Garamond",Georgia,serif;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--tealtxt:#5ED6C6;--ink:#EEF3F8;--slate:#A9B8C9;--bg:#0A1625;--alt:#0E1D31;--card:#12233A;--line:#25364F;color-scheme:dark}}
+:root[data-theme="dark"]{--tealtxt:#5ED6C6;--ink:#EEF3F8;--slate:#A9B8C9;--bg:#0A1625;--alt:#0E1D31;--card:#12233A;--line:#25364F;color-scheme:dark}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 80px);background:var(--deep)}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1rem/1.7 "Plus Jakarta Sans",system-ui,sans-serif}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--deep);z-index:30}
+h1,h2,h3{font-family:var(--serif);font-weight:500;line-height:1.1;margin:0;letter-spacing:-.01em}
+p{margin:0}a{color:inherit}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:rgba(14,32,54,.72);-webkit-backdrop-filter:blur(16px) saturate(1.4);backdrop-filter:blur(16px) saturate(1.4);color:#F6F2E8;border-bottom:4px solid;border-image:linear-gradient(90deg,#FFC61A 0 25%,#FF6B6B 25% 50%,#48BF53 50% 75%,#00A896 75%) 1}
+header .wrap{display:flex;align-items:center;gap:36px;min-height:76px}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none;margin-right:auto;font:600 1.55rem var(--serif);letter-spacing:.01em}
+.logo small{display:block;font:400 .7rem "Plus Jakarta Sans",sans-serif;letter-spacing:.08em;opacity:.65;margin-top:-2px}
+nav{display:flex;gap:30px}
+nav a{text-decoration:none;font-size:.88rem;opacity:.8}
+nav a:hover{opacity:1;color:var(--gold)}
+.btn{display:inline-block;border:1px solid var(--gold);border-radius:999px;padding:13px 28px;font:600 .9rem "Plus Jakarta Sans",sans-serif;cursor:pointer;text-decoration:none;background:var(--gold);color:var(--deep)}
+.btn.line{background:transparent;color:#F6F2E8;border-color:rgba(246,242,232,.4)}
+.btn.sm{padding:9px 20px;background:var(--coral);border-color:var(--coral);color:#0E2036}
+.btn.sm:hover{background:var(--gold);border-color:var(--gold)}
+.hero{background:radial-gradient(640px 460px at 88% 30%,#2E6E9E 0,transparent 70%),radial-gradient(520px 380px at 0% 100%,rgba(124,196,242,.28),transparent 70%),var(--deep);color:#F6F2E8;padding:72px 0 0;overflow:hidden;position:relative}
+.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:end;position:relative;z-index:1}
+.hero h1{font-size:clamp(2.8rem,6.4vw,5.2rem);font-weight:500}
+.hero h1 em{font-style:italic;color:var(--gold)}
+.lead{font-size:1.08rem;color:#C7D2DE;margin:26px 0 34px;max-width:46ch}
+.cta{display:flex;flex-wrap:wrap;gap:14px;align-items:center}
+.note{margin-top:22px;font-size:.85rem;color:#9FB0C2}
+.arch{align-self:end;margin-bottom:-4px;position:relative;perspective:900px}
+.arch svg{display:block;width:100%;max-width:400px;margin-left:auto;height:auto;transition:transform .2s ease-out;transform:rotateX(var(--rx,0deg)) rotateY(var(--ry,0deg));will-change:transform}
+.pen{stroke-dasharray:100;stroke-dashoffset:100;animation:draw 3.4s .5s ease-out forwards}
+@keyframes draw{to{stroke-dashoffset:0}}.blob{position:absolute;border-radius:50%;filter:blur(60px);opacity:.5;pointer-events:none;animation:drift 14s ease-in-out infinite alternate}.b1{width:300px;height:300px;background:#7CC4F2;left:-80px;top:40px}.b2{width:260px;height:260px;background:#FFC61A;right:30%;bottom:80px;opacity:.25;animation-delay:-5s}.b3{width:240px;height:240px;background:#FF6B6B;right:-60px;top:-40px;opacity:.22;animation-delay:-9s}@keyframes drift{to{transform:translate(40px,-30px) scale(1.15)}}.glass{position:absolute;z-index:2;padding:12px 18px;border-radius:18px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.35);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);box-shadow:0 18px 40px -18px rgba(0,0,0,.5);font-size:.82rem;line-height:1.35;color:#F6F2E8;animation:bob 6s ease-in-out infinite alternate}.glass b{display:block;font:500 1.15rem var(--serif)}.g1{left:-18px;top:44%}.g2{right:-6px;top:12%;animation-delay:-3s}@keyframes bob{to{transform:translateY(-12px)}}.cube{position:absolute;z-index:2;width:var(--s,54px);height:var(--s,54px);transform-style:preserve-3d;animation:spin 14s linear infinite}.cube i{position:absolute;inset:0;display:grid;place-items:center;font:600 calc(var(--s,54px)*.5) var(--serif);font-style:normal;color:#0E2036;border:2px solid rgba(255,255,255,.6);border-radius:8px}.cube i:nth-child(1){background:#FFC61A;transform:translateZ(calc(var(--s,54px)/2))}.cube i:nth-child(2){background:#FF8E8E;transform:rotateY(90deg) translateZ(calc(var(--s,54px)/2))}.cube i:nth-child(3){background:#7BE08A;transform:rotateY(180deg) translateZ(calc(var(--s,54px)/2))}.cube i:nth-child(4){background:#7CC4F2;transform:rotateY(-90deg) translateZ(calc(var(--s,54px)/2))}.cube i:nth-child(5){background:#FFC61A;transform:rotateX(90deg) translateZ(calc(var(--s,54px)/2))}.cube i:nth-child(6){background:#FF8E8E;transform:rotateX(-90deg) translateZ(calc(var(--s,54px)/2))}@keyframes spin{from{transform:rotateX(-18deg) rotateY(0)}to{transform:rotateX(-18deg) rotateY(360deg)}}.k1{left:8%;bottom:10%}.k2{--s:36px;right:4%;bottom:7%;animation-duration:10s;animation-direction:reverse}.menu{display:none;background:none;border:1px solid rgba(255,255,255,.3);color:#F6F2E8;border-radius:999px;padding:8px 16px;font:500 .85rem "Plus Jakarta Sans",sans-serif;cursor:pointer}
+.facts{background:rgba(255,255,255,.07);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);position:relative;z-index:1;border-top:1px solid rgba(255,255,255,.12);margin-top:60px}
+.facts .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:0;padding-top:0;padding-bottom:0}
+.facts div{padding:22px 20px;border-left:1px solid rgba(255,255,255,.12);font-size:.88rem;color:#C7D2DE}
+.facts div:first-child{border-left:0;padding-left:0}
+.facts b{display:block;font:500 1.5rem var(--serif);color:#F6F2E8}.facts div::before{content:"";display:block;width:28px;height:6px;border-radius:3px;margin-bottom:10px;background:var(--gold)}.facts div:nth-child(2)::before{background:var(--coral)}.facts div:nth-child(3)::before{background:var(--leaf)}.facts div:nth-child(4)::before{background:var(--teal)}
+section{padding:84px 0}
+.alt{background:var(--alt)}#programs{background:var(--baby)}#inclusion{background:var(--baby)}#approach{background:var(--wht)}#day{background:var(--wht)}#day .day,#campuses .panel{background:var(--baby);box-shadow:none}@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--baby:#14304A;--wht:#0A1625}}:root[data-theme="dark"]{--baby:#14304A;--wht:#0A1625}#campuses{background:var(--wht)}
+.head{max-width:56ch;margin-bottom:44px}
+.head h2,.split h2{font-size:clamp(2rem,4vw,3rem)}
+.head p{color:var(--slate);margin-top:14px}
+.pillars{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.pillar{padding:28px;background:var(--baby);border-radius:24px;transition:transform .6s cubic-bezier(.2,.7,.2,1),opacity .6s,box-shadow .35s}@media (hover:hover){.pillar:hover{transform:perspective(900px) rotateX(5deg) rotateY(-5deg) translateY(-8px);box-shadow:0 24px 40px -22px rgba(14,32,54,.35)}}.pillar.rv{opacity:0;transform:perspective(900px) rotateX(28deg) translateY(30px)}.pillar:nth-child(2){background:color-mix(in srgb,var(--coral) 12%,var(--wht))}.pillar:nth-child(3){background:color-mix(in srgb,var(--leaf) 14%,var(--wht))}.pillar:nth-child(4){background:color-mix(in srgb,var(--gold) 22%,var(--wht))}
+.pillar:first-child{}
+.pillar h3{font-size:1.5rem;margin-bottom:10px}.pillar::before{content:"";display:block;width:40px;height:40px;margin-bottom:18px;background:var(--gold);border-radius:50%}.pillar:nth-child(2)::before{background:var(--coral);border-radius:40px 40px 0 0;height:20px}.pillar:nth-child(3)::before{background:var(--leaf);border-radius:12px}.pillar:nth-child(4)::before{background:var(--teal);border-radius:50% 0 50% 0}
+.pillar p{color:var(--slate);font-size:.94rem}
+.tabs{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:28px}
+.tab{background:var(--card);border:2px solid var(--line);border-radius:999px;padding:9px 20px;font:500 .95rem "Plus Jakarta Sans",sans-serif;color:var(--slate);cursor:pointer}
+.tab[aria-selected="true"]{background:var(--teal);border-color:var(--teal);color:#0E2036;font-weight:600}
+.panel{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:34px;background:var(--card);border-radius:28px;padding:34px;box-shadow:0 12px 36px -20px rgba(14,32,54,.2)}
+.panel h3{font-size:2rem;grid-column:1/-1}
+.panel h4{margin:0 0 8px;font:600 .95rem "Plus Jakarta Sans",sans-serif;color:var(--tealtxt)}
+.panel ul{margin:0;padding-left:18px;color:var(--slate)}
+.panel p{color:var(--slate)}
+.info b{font:500 1.2rem var(--serif);display:block;color:var(--ink)}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.split>div>p{color:var(--slate);margin-top:14px}
+.split ul{padding-left:20px;margin:18px 0 0;color:var(--slate)}
+.split li{margin-bottom:8px}
+.day{list-style:none;margin:0;padding:10px 28px;background:var(--card);border-radius:24px;box-shadow:0 12px 36px -20px rgba(14,32,54,.2)}
+.day li{display:flex;gap:20px;padding:14px 0;border-bottom:1px solid var(--line);color:var(--slate)}
+.day b{min-width:60px;font:500 1.25rem var(--serif);color:var(--ink)}.day li:nth-child(4n+1) b{color:var(--tealtxt)}.day li:nth-child(4n+2) b{color:#E5484D}.day li:nth-child(4n+3) b{color:#3E9E49}.day li:nth-child(4n) b{color:#C98F00}
+.quote{background:var(--card);border-radius:24px;border-left:6px solid var(--gold);padding:30px}
+.quote p{font:italic 500 1.6rem/1.35 var(--serif);color:var(--ink);margin:0 0 12px}
+.quote span{color:var(--slate);font-size:.95rem}
+footer{border-top:4px solid;border-image:linear-gradient(90deg,#FFC61A 0 25%,#FF6B6B 25% 50%,#48BF53 50% 75%,#00A896 75%) 1;background:var(--deep);color:#C7D2DE;padding:56px 0 40px;font-size:.9rem}
+footer .wrap{display:flex;flex-wrap:wrap;gap:36px;justify-content:space-between}
+footer h3{font-size:1.4rem;color:#F6F2E8;margin-bottom:8px}
+footer a{display:block;text-decoration:none}
+footer a:hover{color:var(--gold)}
+dialog{border:0;border-radius:20px;padding:32px;width:min(450px,92vw);background:var(--card);color:var(--ink)}
+dialog::backdrop{background:rgba(14,32,54,.55);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}
+label{display:block;font-weight:600;font-size:.85rem;margin:16px 0 5px}
+input,select{width:100%;padding:12px 14px;border-radius:10px;border:1px solid var(--line);background:var(--bg);color:var(--ink);font:inherit}
+.row{display:flex;gap:10px;margin-top:26px}
+dialog .btn.line{color:var(--ink);border-color:var(--line)}
+#toast{position:fixed;left:50%;bottom:calc(24px + env(safe-area-inset-bottom,0px));transform:translate(-50%,40px);opacity:0;background:var(--deep);color:#F6F2E8;border:1px solid var(--gold);padding:13px 24px;border-radius:999px;transition:.3s;z-index:50;max-width:90vw;text-align:center}
+#toast.on{transform:translate(-50%,0);opacity:1}
+@media (max-width:820px){nav{display:none;position:absolute;left:12px;right:12px;top:calc(100% + 8px);flex-direction:column;gap:0;padding:10px 18px;border-radius:20px;background:rgba(14,32,54,.88);-webkit-backdrop-filter:blur(18px);backdrop-filter:blur(18px);border:1px solid rgba(255,255,255,.18)}nav.open{display:flex}nav a{padding:12px 0;font-size:1rem}.menu{display:block}header .wrap{gap:12px;min-height:68px}.logo small{display:none}.hero .wrap,.split{grid-template-columns:1fr;gap:40px}.arch svg{margin:0 auto}.pillars{grid-template-columns:1fr 1fr;row-gap:36px}.facts .wrap{grid-template-columns:1fr 1fr}.facts div:nth-child(odd){border-left:0;padding-left:0}section{padding:60px 0}}
+@media (max-width:520px){.wrap{padding:0 18px}.hero{padding-top:44px}.hero h1{font-size:2.5rem}.cta .btn{flex:1 1 100%;text-align:center}.pillars{grid-template-columns:1fr}.panel{padding:24px;gap:24px}.day{padding:6px 18px}.quote p{font-size:1.35rem}.glass{display:none}.arch svg{max-width:300px}.btn.sm{padding:8px 14px;font-size:.8rem}.tab{padding:8px 14px;font-size:.85rem}.facts div{padding:18px 14px}.facts b{font-size:1.2rem}}body{overflow-x:clip}
+.mbar{display:none;position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom,0px));z-index:25;gap:10px;padding:10px;border-radius:24px;background:rgba(14,32,54,.82);-webkit-backdrop-filter:blur(18px);backdrop-filter:blur(18px);border:1px solid rgba(255,255,255,.2);box-shadow:0 18px 40px -16px rgba(0,0,0,.5)}
+.mbar .btn{flex:1;text-align:center;padding:12px 10px;font-size:.88rem}
+@media (hover:none){.arch{animation:bob 7s ease-in-out infinite alternate}}
+@media (max-width:820px){body{padding-bottom:84px}.mbar{display:flex}#toast{bottom:calc(92px + env(safe-area-inset-bottom,0px))}.tabs{flex-wrap:nowrap;overflow-x:auto;scroll-snap-type:x proximity;margin:0 -18px 24px;padding:2px 18px 8px;scrollbar-width:none}.tabs::-webkit-scrollbar{display:none}.tab{flex:none;scroll-snap-align:start;white-space:nowrap;min-height:44px}.btn{min-height:46px}.head{margin-bottom:30px}.head h2,.split h2{font-size:clamp(1.8rem,7vw,2.3rem)}.split{gap:32px}.lead{font-size:1rem;margin:20px 0 26px}.hero .wrap{gap:36px}.facts{margin-top:44px}.blob{filter:blur(40px)}.b2{display:none}footer .wrap{flex-direction:column;gap:28px}}
+@media (max-width:520px){header .btn.sm{display:none}header .wrap{justify-content:space-between}.logo{font-size:1.35rem}.k1{--s:44px}dialog{width:100%;max-width:100%;margin:auto 0 0;border-radius:24px 24px 0 0;padding:26px 22px calc(26px + env(safe-area-inset-bottom,0px))}input,select{font-size:16px}.row{flex-direction:column-reverse}.row .btn{width:100%;text-align:center}}
+@media (prefers-reduced-motion:reduce){.blob,.glass,.cube,.arch{animation:none}.arch svg{transform:none!important}.pillar.rv{opacity:1;transform:none}.pen{animation:none;stroke-dashoffset:0}html{scroll-behavior:auto}#toast{transition:none}}
+</style>
+</head>
+<body>
+<header>
+ <div class="wrap">
+  <a class="logo" href="#top"><svg width="34" height="34" viewBox="0 0 34 34" aria-hidden="true"><path d="M4 18h26a13 13 0 0 1-26 0z" fill="#00A896"/><path d="M10 14a7 7 0 0 1 14 0z" fill="#D4AF5F"/></svg><span>Tot’s College<small>International Preschool & Nursery</small></span></a>
+  <button class="menu" id="menu" aria-label="Open menu" aria-expanded="false">Menu</button><nav aria-label="Main" id="nav"><a href="#approach">Our approach</a><a href="#programs">Programs</a><a href="#day">A day here</a><a href="#inclusion">Inclusion</a><a href="#campuses">Campuses</a></nav>
+  <button class="btn sm" data-tour>Book a private tour</button>
+ </div>
+</header>
+
+<main id="top">
+<div class="hero"><i class="blob b1"></i><i class="blob b2"></i><i class="blob b3"></i>
+ <div class="wrap">
+  <div>
+   <h1>A second home for your child’s <em>first years</em></h1>
+   <p class="lead">Early learning led by the International Primary Curriculum, in small, warm classrooms with a real garden. Across New Cairo and El Obour.</p>
+   <div class="cta"><button class="btn" data-tour>Book a private tour</button><a class="btn line" href="https://wa.me/201557801754">Speak with admissions</a></div>
+   <p class="note">Now enrolling for 2026/2027. Children from 4 months to 5 years.</p>
+  </div>
+  <div class="arch" id="arch"><div class="glass g1"><b>Garden play</b>every single day</div><div class="glass g2"><b>Now enrolling</b>2026/2027</div><div class="cube k1"><i>A</i><i>B</i><i>C</i><i>1</i><i>2</i><i>3</i></div><div class="cube k2"><i>B</i><i>1</i><i>A</i><i>2</i><i>C</i><i>3</i></div>
+   <svg viewBox="-10 -10 380 460" role="img" aria-label="Illustration of a dotted line being traced beneath a rising sun">
+    <defs><clipPath id="a"><path d="M0 450V180a180 180 0 0 1 360 0V450z"/></clipPath>
+    <linearGradient id="s" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2A7F8E"/><stop offset=".6" stop-color="#F3E3BE"/><stop offset="1" stop-color="#F9EFD5"/></linearGradient></defs>
+    <g clip-path="url(#a)">
+     <rect width="360" height="450" fill="url(#s)"/>
+     <circle cx="236" cy="190" r="44" fill="#FFC61A"/>
+     <path d="M0 330C80 285 170 300 250 328S340 320 360 305V450H0z" fill="#0B8E86"/>
+     <path d="M0 380C90 345 200 360 360 340V450H0z" fill="#48BF53"/>
+     <path d="M70 262C120 170 240 170 290 262" fill="none" stroke="#fff" stroke-opacity=".7" stroke-width="5" stroke-linecap="round" stroke-dasharray="0.1 9"/>
+     <path class="pen" pathLength="100" d="M70 262C120 170 240 170 290 262" fill="none" stroke="#C0392B" stroke-width="5" stroke-linecap="round"/>
+    </g>
+    <path d="M-8 450V180a188 188 0 0 1 376 0V450" fill="none" stroke="#FFC61A" stroke-width="1.5"/><circle cx="6" cy="110" r="15" fill="#FF6B6B"/><rect x="330" y="50" width="30" height="30" rx="8" fill="#48BF53" transform="rotate(18 345 65)"/><path d="M318 300a22 22 0 0 1 44 0z" fill="#00A896"/><circle cx="350" cy="390" r="9" fill="#FFC61A"/>
+   </svg>
+  </div>
+ </div>
+ <div class="facts"><div class="wrap">
+  <div><b>4 months to 5 years</b>Infant care to KG1</div>
+  <div><b>Three campuses</b>New Cairo and El Obour</div>
+  <div><b>IPC framework</b>Language Arts and numeracy</div>
+  <div><b>Belong partnership</b>Inclusion and teacher coaching</div>
+ </div></div>
+</div>
+
+<section id="approach"><div class="wrap">
+ <div class="head"><h2>Where every game sparks a lesson, and every day feels like home</h2></div>
+ <div class="pillars">
+  <div class="pillar"><h3>Writing, step by step</h3><p>Finger painting, bead threading, dot tracing, then their own name. IPC Language Arts builds the hand before the pencil.</p></div>
+  <div class="pillar"><h3>Every child supported</h3><p>Teachers coached by Belong Behavior & Education Consulting to notice needs early and respond with calm.</p></div>
+  <div class="pillar"><h3>A garden, not a yard</h3><p>Real grass, playhouses, gentle slides and a trike circuit. Outdoor time every day.</p></div>
+  <div class="pillar"><h3>Proudly Egyptian</h3><p>Arabic phonics, flag days and traditional songs, beside the English skills for a global school path.</p></div>
+ </div>
+</div></section>
+
+<section id="programs" class="alt"><div class="wrap">
+ <div class="head"><h2>A stage for every age</h2><p>Choose an age to see how learning is shaped for it.</p></div>
+ <div class="tabs" role="tablist" id="ptabs"></div>
+ <div class="panel" id="ppanel" role="tabpanel" aria-live="polite"></div>
+</div></section>
+
+<section id="day"><div class="wrap split">
+ <div>
+  <h2>A day at Tot’s College</h2>
+  <p>A steady rhythm helps little ones feel safe, so they can be curious. Fridays and Saturdays are for family.</p>
+  <ul><li>Little Chef mornings with peeling, spreading and kneading</li><li>Sensory tubs of pasta, rice, water and clay</li><li>Music, dress-up and Children’s Day stage practice</li></ul>
+ </div>
+ <ul class="day">
+  <li><b>8:00</b>Welcome and circle time</li><li><b>9:00</b>IPC language and skills</li><li><b>10:15</b>Healthy snack</li><li><b>11:00</b>Garden play</li><li><b>12:15</b>Sensory and STEM labs</li><li><b>1:15</b>Lunch and storytime</li><li><b>2:00</b>Nap and quiet corners</li><li><b>3:30</b>Pick-up and parent updates</li>
+ </ul>
+</div></section>
+
+<section id="inclusion" class="alt"><div class="wrap split">
+ <div>
+  <h2>Teachers who keep learning too</h2>
+  <p>Our partnership with Belong Behavior & Education Consulting starts with the adults in the room.</p>
+  <ul><li>Workshops on positive reinforcement and emotional co-regulation</li><li>Classroom adjustments that prevent sensory overload</li><li>Early observation, shared openly with parents</li></ul>
+ </div>
+ <div class="quote"><p>“Mum, I wrote it myself!”</p><span>The sentence our teachers wait for. It is why we guide each attempt and never rush it.</span></div>
+</div></section>
+
+<section id="campuses"><div class="wrap">
+ <div class="head"><h2>Find your campus</h2></div>
+ <div class="tabs" role="tablist" id="ctabs"></div>
+ <div class="panel" id="cpanel" role="tabpanel" aria-live="polite"></div>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+ <div><h3>Tot’s College</h3><p>Your kid’s second home.</p></div>
+ <div><h3>Hours</h3><p>Sunday to Thursday, 8:00 AM to 4:00 PM<br>Early drop-off from 7:30 AM<br>Extended care until 5:30 PM</p></div>
+ <div><h3>Contact</h3><a href="tel:+201557801754">+20 15 57801754</a><a href="tel:+201119900900">+20 11 19900900</a><a href="https://www.instagram.com/totscollege/">Instagram</a><a href="https://www.facebook.com/tots.tots.773">Facebook</a></div>
+</div></footer>
+
+<div class="mbar"><button class="btn" data-tour>Book a tour</button><a class="btn line" href="https://wa.me/201557801754">WhatsApp</a></div>
+<dialog id="dlg">
+ <form id="tour">
+  <h2 style="font-size:2rem">Book a private tour</h2>
+  <label for="n">Parent name</label><input id="n" required autocomplete="name">
+  <label for="w">WhatsApp number</label><input id="w" type="tel" required autocomplete="tel">
+  <label for="a">Child’s age</label>
+  <select id="a"><option>4 to 12 months</option><option>1 to 2 years</option><option>2 to 3 years</option><option>3 to 5 years</option></select>
+  <label for="c">Preferred campus</label>
+  <select id="c"><option>New Cairo, RCIS campus</option><option>New Cairo, Katameya and Ritaj</option><option>El Obour City</option></select>
+  <div class="row"><button class="btn" type="submit">Request tour</button><button class="btn line" type="button" id="close">Cancel</button></div>
+ </form>
+</dialog>
+<div id="toast" role="status"></div>
+
+<script>
+var P=[
+{t:"Infants",a:"4 to 12 months",f:"Sensory integration, motor stability and emotional bonding.",x:["Soft tummy-time gym","Mirror play","Lullaby listening","Fabric exploration"],o:["Head control","Visual tracking","Secure attachment"]},
+{t:"Toddlers",a:"1 to 2 years",f:"Fine motor skills, first words and balance.",x:["Color matching","Kinetic sand and nesting cups","Circle time songs","Push-toy garden tracks"],o:["First words","Pincer grasp","Social smiles"]},
+{t:"Early Inquirers",a:"2 to 3 years",f:"IPC Language Arts, peer play and concentration.",x:["Pre-writing strokes","Dot-to-dot tracing","Sorting by attribute","Puppet storytelling"],o:["Sound awareness","Potty-training progress","Independent eating"]},
+{t:"Foundation",a:"3 to 5 years",f:"Early literacy, numbers and school-interview readiness.",x:["Letter-sound blending","Guided handwriting","STEM experiments","Mini baking"],o:["Fluent pencil grip","Reading simple words","Interview confidence"]}];
+var C=[
+{t:"New Cairo, RCIS",w:"Inside Royal College International School, South Investors, 5th Settlement",f:"Preschool, KG1 and school interview preparation"},
+{t:"New Cairo, Katameya",w:"Near South Academy and Katameya Gardens or Ritaj compound",f:"Infant care, toddlers and pre-nursery"},
+{t:"El Obour City",w:"Central Obour residential district",f:"Full nursery, toddler and foundation stages"}];
+function li(a){return a.map(function(s){return "<li>"+s+"</li>"}).join("")}
+function tabs(id,pid,list,draw){
+ var el=document.getElementById(id),pn=document.getElementById(pid);
+ el.innerHTML=list.map(function(x,i){return '<button class="tab" role="tab" data-i="'+i+'">'+x.t+(x.a?", "+x.a:"")+'</button>'}).join("");
+ function sel(i){[].forEach.call(el.children,function(b,j){b.setAttribute("aria-selected",j==i)});pn.innerHTML=draw(list[i])}
+ el.onclick=function(e){var b=e.target.closest(".tab");if(b)sel(+b.dataset.i)};sel(0)}
+tabs("ptabs","ppanel",P,function(x){return "<h3>"+x.t+"</h3><div><h4>Focus</h4><p>"+x.f+"</p></div><div><h4>What they do</h4><ul>"+li(x.x)+"</ul></div><div><h4>What you will see</h4><ul>"+li(x.o)+"</ul></div>"});
+tabs("ctabs","cpanel",C,function(x){return "<h3>"+x.t+"</h3><div class='info'><b>Where</b><p>"+x.w+"</p></div><div class='info'><b>Focus</b><p>"+x.f+"</p></div><div class='info'><b>Call or WhatsApp</b><p>+20 15 57801754<br>+20 11 19900900</p></div>"});
+var m=document.getElementById("menu"),nv=document.getElementById("nav");
+m.onclick=function(){var o=nv.classList.toggle("open");m.setAttribute("aria-expanded",o)};
+nv.onclick=function(e){if(e.target.tagName==="A"){nv.classList.remove("open");m.setAttribute("aria-expanded",false)}};
+var rm=matchMedia("(prefers-reduced-motion:reduce)").matches,ar=document.getElementById("arch"),hr=document.querySelector(".hero");
+if(!rm){
+ hr.addEventListener("pointermove",function(e){var r=ar.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;ar.style.setProperty("--ry",(x*14).toFixed(1)+"deg");ar.style.setProperty("--rx",(-y*10).toFixed(1)+"deg")});
+ hr.addEventListener("pointerleave",function(){ar.style.setProperty("--ry","0deg");ar.style.setProperty("--rx","0deg")});
+ if("IntersectionObserver" in window){var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){en.target.classList.remove("rv");io.unobserve(en.target);setTimeout(function(){en.target.style.transitionDelay=""},900)}})},{threshold:.2});[].forEach.call(document.querySelectorAll(".pillar"),function(p,i){p.classList.add("rv");p.style.transitionDelay=i*90+"ms";io.observe(p)})}
+}
+var d=document.getElementById("dlg"),t=document.getElementById("toast");
+[].forEach.call(document.querySelectorAll("[data-tour]"),function(b){b.onclick=function(){d.showModal()}});
+document.getElementById("close").onclick=function(){d.close()};
+document.getElementById("tour").onsubmit=function(e){e.preventDefault();d.close();t.textContent="Thank you. Our admissions team will message you on WhatsApp to confirm.";t.classList.add("on");setTimeout(function(){t.classList.remove("on")},4000);e.target.reset()};
+</script>
+</body>
+</html>
